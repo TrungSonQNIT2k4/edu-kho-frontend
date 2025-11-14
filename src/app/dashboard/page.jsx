@@ -1,30 +1,33 @@
 // app/dashboard/page.jsx
-"use client"; // <-- LUÔN LUÔN LÀ DÒNG ĐẦU TIÊN!
+"use client";
 
 import { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
 
-// Component này sẽ chạy ở Client (trình duyệt)
+// Dynamic import để tắt SSR
+const ChatWidget = dynamic(() => import("@/components/ChatWidget"), {
+  ssr: false,
+});
+
 export default function DashboardPage() {
   const [userName, setUserName] = useState("Đang tải...");
 
-  // Giả lập việc fetch dữ liệu
   useEffect(() => {
-    // Code này chỉ chạy ở trình duyệt
-    // Sau này, chúng ta sẽ dùng nó để kết nối Socket.io đến RASA
     setTimeout(() => {
       setUserName("Chủ kho EduKho");
     }, 1000);
   }, []);
 
   return (
-    <main className="p-8">
-      <h1 className="text-3xl font-bold">Trang Tổng Quan (CSR)</h1>
-      <p className="mt-4">
-        Chào mừng trở lại, <b>{userName}</b>!
+    <main style={{ padding: "2rem" }}>
+      <h1 style={{ fontSize: "1.875rem", fontWeight: "bold" }}>
+        Trang Tổng Quan (CSR)
+      </h1>
+      <p style={{ marginTop: "1rem" }}>
+        Chào mừng trở lại, <strong>{userName}</strong>!
       </p>
-      {/*
-        <ChatWidget />  <-- Chatbot RASA sẽ được đặt ở đây
-      */}
+      <hr style={{ margin: "20px 0" }} />
+      <ChatWidget />
     </main>
   );
 }
