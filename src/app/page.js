@@ -1,4 +1,4 @@
-// app/gioi-thieu/page.jsx
+import Link from "next/link";
 
 // Đây là cách thêm SEO "chuẩn" (bằng JS)
 export const metadata = {
@@ -17,6 +17,11 @@ export default function GioiThieuPage() {
         EduKho là giải pháp được thiết kế đặc biệt cho các chủ cửa hàng văn
         phòng phẩm tại Việt Nam...
       </p>
+      <Link href="/dashboard">
+        <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
+          EduKhoChat
+        </button>
+      </Link>
     </main>
   );
 }
