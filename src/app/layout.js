@@ -20,6 +20,10 @@ export const metadata = {
   // 1. Định danh URL gốc (Quan trọng để hình ảnh hiển thị đúng khi share)
   metadataBase: new URL(DOMAIN_URL),
 
+  verification: {
+    google: "w0bUCkptQJ69IhkeNGwAN9ANCnI_EzNDSDnolcVQXrc",
+  },
+
   // 2. Cấu hình Tiêu đề (Title) thông minh
   title: {
     default: "EduKho - Quản lý Kho & Sách Giáo Khoa Thông Minh", // Tiêu đề mặc định cho trang chủ
