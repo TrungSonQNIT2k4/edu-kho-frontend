@@ -90,7 +90,7 @@ export const metadata = {
 
   // 9. Icon hiển thị trên tab trình duyệt
   icons: {
-    icon: "/favicon.ico",
+    icon: "/logo.ico",
   },
 };
 
