@@ -8,8 +8,6 @@ export const metadata = {
 };
 
 export default function GioiThieuPage() {
-  // Vì không có "use client", Next.js tự động
-  // biến trang này thành SSG (món ăn làm sẵn).
   return (
     <main className="p-8">
       <h1 className="text-3xl font-bold">Giới thiệu về EduKho (SSG)</h1>
@@ -20,6 +18,11 @@ export default function GioiThieuPage() {
       <Link href="/dashboard">
         <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
           EduKhoChat
+        </button>
+      </Link>
+      <Link href="/Login">
+        <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
+          Product
         </button>
       </Link>
     </main>
