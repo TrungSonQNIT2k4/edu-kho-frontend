@@ -240,7 +240,7 @@ export default function EduKhoApp() {
       <div
         className={`${
           sidebarOpen ? "w-64" : "w-20"
-        } bg-[#dae2f9] text-white transition-all duration-300 flex flex-col`}
+        } bg-[#bbd6fd] text-white transition-all duration-300 flex flex-col`}
       >
         {/* Logo */}
         <div className="p-6 flex items-center gap-3">
