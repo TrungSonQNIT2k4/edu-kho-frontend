@@ -113,16 +113,7 @@ export default function LoginPage() {
         <div className="w-full lg:w-1/2 p-8 lg:p-12">
           {/* Logo */}
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-full flex items-center justify-center">
-              <svg
-                className="w-10 h-10 text-white"
-                viewBox="0 0 100 100"
-                fill="currentColor"
-              >
-                <path d="M50 10 L30 30 L50 50 L30 70 L50 90 L70 70 L50 50 L70 30 Z" />
-              </svg>
-            </div>
-            <span className="text-2xl font-bold text-blue-900">EduKho</span>
+            <img src="/edklogo.png" alt="" className="h-20 w-28" />
           </div>
 
           {/* Title */}
@@ -312,51 +303,7 @@ export default function LoginPage() {
         {/* Right Section - Illustration */}
         <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-blue-50 to-indigo-100 items-center justify-center p-12">
           <div className="text-center">
-            <div className="mb-8">
-              <svg
-                className="w-80 h-80 mx-auto"
-                viewBox="0 0 400 400"
-                fill="none"
-              >
-                <circle cx="200" cy="120" r="60" fill="#3B82F6" opacity="0.2" />
-                <circle cx="200" cy="120" r="40" fill="#3B82F6" opacity="0.4" />
-                <rect
-                  x="120"
-                  y="200"
-                  width="160"
-                  height="180"
-                  rx="8"
-                  fill="#3B82F6"
-                  opacity="0.3"
-                />
-                <path d="M200 80 L180 100 L200 120 L220 100 Z" fill="#3B82F6" />
-                <rect
-                  x="140"
-                  y="220"
-                  width="40"
-                  height="140"
-                  rx="4"
-                  fill="#6366F1"
-                />
-                <rect
-                  x="190"
-                  y="220"
-                  width="40"
-                  height="140"
-                  rx="4"
-                  fill="#8B5CF6"
-                />
-                <rect
-                  x="240"
-                  y="220"
-                  width="20"
-                  height="140"
-                  rx="4"
-                  fill="#6366F1"
-                />
-              </svg>
-            </div>
-            <h2 className="text-5xl font-bold text-gray-800">EduKho</h2>
+            <img src="/loginintro.png" alt="" />
           </div>
         </div>
       </div>
