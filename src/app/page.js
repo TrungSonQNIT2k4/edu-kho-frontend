@@ -77,8 +77,17 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="relative h-[500px]">
-            <img src="/introimg.png" alt="" />
+          <div className="relative h-[500px] w-full">
+            <video
+              className="w-full h-full object-cover rounded-xl shadow-2xl"
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src="/demo.mp4" type="video/mp4" />
+              Trình duyệt của bạn không hỗ trợ thẻ video.
+            </video>
           </div>
         </div>
       </div>
