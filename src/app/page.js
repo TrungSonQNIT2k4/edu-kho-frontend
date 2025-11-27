@@ -85,7 +85,7 @@ export default function HomePage() {
               loop
               playsInline
             >
-              <source src="/demo.mp4" type="video/mp4" />
+              <source src="/Demo.mp4" type="video/mp4" />
               Trình duyệt của bạn không hỗ trợ thẻ video.
             </video>
           </div>
